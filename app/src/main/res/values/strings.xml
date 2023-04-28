@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="startButton">Начать</string>
+    <string name="backButton">Назад</string>
+</resources>
