@@ -2,4 +2,8 @@
     <string name="app_name">Quiz</string>
     <string name="startButton">Начать</string>
     <string name="backButton">Назад</string>
+    <string name="aboutGame">Игра представляет собой викторину, цель которой проверить ваши знания в разных областях.
+        Пока доступны только пять уровней, но их будет становиться больше и больше.
+    Желаем удачи на викторине ! :)</string>
+    <string name="aboutGameButton">Об игре</string>
 </resources>

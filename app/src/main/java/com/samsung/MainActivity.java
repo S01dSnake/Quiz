@@ -14,14 +14,28 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button buttonStart = (Button)findViewById(R.id.button);
+        Button buttonStart = (Button) findViewById(R.id.button);
         buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 try {
-                    Intent intent= new Intent(MainActivity.this, GameLevels.class);
-                    startActivity(intent);finish();
-                }catch (Exception e){
+                    Intent intent = new Intent(MainActivity.this, GameLevels.class);
+                    startActivity(intent);
+                    finish();
+                } catch (Exception e) {
+
+                }
+            }
+        });
+        Button aboutGame = (Button) findViewById(R.id.about_button);
+        aboutGame.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(MainActivity.this, AboutGame.class);
+                    startActivity(intent);
+                    finish();
+                } catch (Exception e) {
 
                 }
             }

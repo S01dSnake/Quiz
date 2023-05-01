@@ -8,12 +8,12 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class GameLevels extends AppCompatActivity {
+public class AboutGame extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.gamelevels);
+        setContentView(R.layout.about_game);
 
         Button button_back = (Button) findViewById(R.id.button_back2);
         button_back.setOnClickListener(new View.OnClickListener() {
@@ -22,25 +22,14 @@ public class GameLevels extends AppCompatActivity {
 
 
                 try {
-                    Intent intent = new Intent(GameLevels.this, MainActivity.class);
+                    Intent intent = new Intent(AboutGame.this, MainActivity.class);
                     startActivity(intent);
                 } catch (Exception e) {
 
                 }
             }
         });
-        TextView textView = (TextView) findViewById(R.id.textView);
-        textView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-                    Intent intent = new Intent(GameLevels.this, Level1.class);
-                    startActivity(intent);
-                    finish();
-                } catch (Exception e) {
 
-                }
-            }
-        });
+
     }
 }
