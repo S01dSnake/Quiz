@@ -1,7 +1,5 @@
 package com.samsung;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -15,12 +13,13 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Random;
 
-public class Level1 extends AppCompatActivity {
+public class Level3 extends AppCompatActivity {
 
 
     Dialog dialog;
@@ -43,7 +42,7 @@ public class Level1 extends AppCompatActivity {
 
 
         TextView text_levels = findViewById(R.id.text_levels);
-        text_levels.setText(R.string.level1);
+        text_levels.setText(R.string.level3);
 
 
         final ImageView img_left = (ImageView) findViewById(R.id.img_left);
@@ -60,7 +59,7 @@ public class Level1 extends AppCompatActivity {
 
         dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.setContentView(R.layout.preview_dialog);
+        dialog.setContentView(R.layout.preview_dialog_level3);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialog.setCancelable(false);
 
@@ -71,7 +70,7 @@ public class Level1 extends AppCompatActivity {
             public void onClick(View v) {
 
                 try {
-                    Intent intent = new Intent(Level1.this, GameLevels.class);
+                    Intent intent = new Intent(Level3.this, GameLevels.class);
                     startActivity(intent);
                     finish();
                 } catch (Exception e) {
@@ -92,13 +91,12 @@ public class Level1 extends AppCompatActivity {
             }
         });
 
-
         dialog.show();
 
 
         dialogEnd = new Dialog(this);
         dialogEnd.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialogEnd.setContentView(R.layout.end_dialog);
+        dialogEnd.setContentView(R.layout.end_dialog_level3);
         dialogEnd.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialogEnd.setCancelable(false);
 
@@ -109,7 +107,7 @@ public class Level1 extends AppCompatActivity {
             public void onClick(View v) {
 
                 try {
-                    Intent intent = new Intent(Level1.this, GameLevels.class);
+                    Intent intent = new Intent(Level3.this, GameLevels.class);
                     startActivity(intent);
                     finish();
                 } catch (Exception e) {
@@ -125,7 +123,7 @@ public class Level1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    Intent intent = new Intent(Level1.this, Level2.class);
+                    Intent intent = new Intent(Level3.this, Level4.class);
                     startActivity(intent);
                     finish();
                 } catch (Exception e) {
@@ -144,7 +142,7 @@ public class Level1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    Intent intent = new Intent(Level1.this, GameLevels.class);
+                    Intent intent = new Intent(Level3.this, GameLevels.class);
                     startActivity(intent);
                     finish();
                 } catch (Exception e) {
@@ -158,12 +156,12 @@ public class Level1 extends AppCompatActivity {
                 R.id.point1, R.id.point2, R.id.point3, R.id.point4, R.id.point5
         };
 
-        final Animation a = AnimationUtils.loadAnimation(Level1.this, R.anim.alfa);
+        final Animation a = AnimationUtils.loadAnimation(Level3.this, R.anim.alfa);
 
 
         numLeft = random.nextInt(10);
-        img_left.setImageResource(array.images1[numLeft]);
-        text_left.setText(array.texts1[numLeft]);
+        img_left.setImageResource(array.images3[numLeft]);
+        text_left.setText(array.texts3[numLeft]);
 
 
         numRight = random.nextInt(10);
@@ -174,8 +172,8 @@ public class Level1 extends AppCompatActivity {
         }
 
 
-        img_right.setImageResource(array.images1[numRight]);
-        text_right.setText(array.texts1[numRight]);
+        img_right.setImageResource(array.images3[numRight]);
+        text_right.setText(array.texts3[numRight]);
 
         img_left.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -228,20 +226,20 @@ public class Level1 extends AppCompatActivity {
                     if (count == 5) {
                         SharedPreferences save = getSharedPreferences("Save", MODE_PRIVATE);
                         final int level = save.getInt("Level", 1);
-                        if (level > 1) {
+                        if (level > 3) {
 
                         } else {
                             SharedPreferences.Editor editor = save.edit();
-                            editor.putInt("level", 2);
+                            editor.putInt("level", 4);
                             editor.commit();
                         }
                         dialogEnd.show();
 
                     } else {
                         numLeft = random.nextInt(10);
-                        img_left.setImageResource(array.images1[numLeft]);
+                        img_left.setImageResource(array.images3[numLeft]);
                         img_left.startAnimation(a);
-                        text_left.setText(array.texts1[numLeft]);
+                        text_left.setText(array.texts3[numLeft]);
 
 
                         numRight = random.nextInt(10);
@@ -252,9 +250,9 @@ public class Level1 extends AppCompatActivity {
                         }
 
 
-                        img_right.setImageResource(array.images1[numRight]);
+                        img_right.setImageResource(array.images3[numRight]);
                         img_right.startAnimation(a);
-                        text_right.setText(array.texts1[numRight]);
+                        text_right.setText(array.texts3[numRight]);
 
                         img_right.setEnabled(true);
                     }
@@ -317,19 +315,20 @@ public class Level1 extends AppCompatActivity {
                     if (count == 5) {
                         SharedPreferences save = getSharedPreferences("Save", MODE_PRIVATE);
                         final int level = save.getInt("Level", 1);
-                        if (level > 1) {
+                        if (level > 3) {
 
                         } else {
                             SharedPreferences.Editor editor = save.edit();
-                            editor.putInt("level", 2);
+                            editor.putInt("level", 4);
                             editor.commit();
                         }
                         dialogEnd.show();
+
                     } else {
                         numLeft = random.nextInt(10);
-                        img_left.setImageResource(array.images1[numLeft]);
+                        img_left.setImageResource(array.images3[numLeft]);
                         img_left.startAnimation(a);
-                        text_left.setText(array.texts1[numLeft]);
+                        text_left.setText(array.texts3[numLeft]);
 
 
                         numRight = random.nextInt(10);
@@ -340,9 +339,9 @@ public class Level1 extends AppCompatActivity {
                         }
 
 
-                        img_right.setImageResource(array.images1[numRight]);
+                        img_right.setImageResource(array.images3[numRight]);
                         img_right.startAnimation(a);
-                        text_right.setText(array.texts1[numRight]);
+                        text_right.setText(array.texts3[numRight]);
 
                         img_left.setEnabled(true);
                     }

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="leveltext0">Ноль</string>
+    <string name="leveltext1">Один</string>
+    <string name="leveltext2">Два</string>
+    <string name="leveltext3">Три</string>
+    <string name="leveltext4">Четыре</string>
+    <string name="leveltext5">Пять</string>
+    <string name="leveltext6">Шесть</string>
+    <string name="leveltext7">Семь</string>
+    <string name="leveltext8">Восемь</string>
+    <string name="leveltext9">Девять</string>
+
+    <string name="level2text1">I</string>
+    <string name="level2text2">II</string>
+    <string name="level2text3">III</string>
+    <string name="level2text4">IV</string>
+    <string name="level2text5">V</string>
+    <string name="level2text6">VI</string>
+    <string name="level2text7">VII</string>
+    <string name="level2text8">VIII</string>
+    <string name="level2text9">IX</string>
+    <string name="level2text10">X</string>
+
+    <string name="level3text0">Мексика</string>
+    <string name="level3text1">Россия</string>
+    <string name="level3text2">Бангладеш</string>
+    <string name="level3text3">Бразилия</string>
+    <string name="level3text4">Нигерия</string>
+    <string name="level3text5">Пакистан</string>
+    <string name="level3text6">Индонезия</string>
+    <string name="level3text7">США</string>
+    <string name="level3text8">Китай</string>
+    <string name="level3text9">Индия</string>
+
+    <string name="level4text0">Водород</string>
+    <string name="level4text1">Гелий</string>
+    <string name="level4text2">Литий</string>
+    <string name="level4text3">Берилий</string>
+    <string name="level4text4">Бор</string>
+    <string name="level4text5">Углерод</string>
+    <string name="level4text6">Азот</string>
+    <string name="level4text7">Кислород</string>
+    <string name="level4text8">Фтор</string>
+    <string name="level4text9">Неон</string>
+
+    <string name="level5text0">Куликовская битва</string>
+    <string name="level5text1">Смутное время</string>
+    <string name="level5text2">Северная война</string>
+    <string name="level5text3">Основание Санкт-Петербурга</string>
+    <string name="level5text4">Основание Московского университета</string>
+    <string name="level5text5">Отечественная война</string>
+    <string name="level5text6">Отмена крепостного права</string>
+    <string name="level5text7">Великая отечественная война</string>
+    <string name="level5text8">Первый полет человека в космос</string>
+    <string name="level5text9">Распад СССР</string>
+
+</resources>

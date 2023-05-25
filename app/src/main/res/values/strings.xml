@@ -1,9 +1,29 @@
 <resources>
     <string name="app_name">Quiz</string>
+
     <string name="startButton">Начать</string>
+
     <string name="backButton">Назад</string>
+
     <string name="aboutGame">Игра представляет собой викторину, цель которой проверить ваши знания в разных областях.
-        Пока доступны только пять уровней, но их будет становиться больше и больше.
+        За прохождение уровня вы будете получать интересный факт.
     Желаем удачи на викторине ! :)</string>
+
     <string name="aboutGameButton">Об игре</string>
+
+    <string name="level">Уровень:</string>
+
+    <string name="level1">Уровень 1</string>
+
+    <string name="level2">Уровень 2</string>
+
+    <string name="level3">Уровень 3</string>
+
+    <string name="level4">Уровень 4</string>
+
+    <string name="level5">Уровень 5</string>
+
+    <string name="exit">&#60;</string>
+
+    <string name="textContinue">Продолжить</string>
 </resources>

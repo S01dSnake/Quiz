@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/gamebackground"
@@ -28,7 +28,7 @@
             android:padding="10dp">
 
             <LinearLayout
-                android:id="@+id/container3"
+                android:id="@+id/line1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
@@ -77,7 +77,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_press"
                             android:gravity="center"
-                            android:text="2"
+                            android:text="X"
                             android:textSize="24sp"
                             android:textStyle="bold" />
 
@@ -88,7 +88,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_press"
                             android:gravity="center"
-                            android:text="3"
+                            android:text="X"
                             android:textSize="24sp"
                             android:textStyle="bold" />
 
@@ -99,7 +99,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_press"
                             android:gravity="center"
-                            android:text="4"
+                            android:text="X"
                             android:textSize="24sp"
                             android:textStyle="bold" />
 
@@ -110,7 +110,7 @@
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_press"
                             android:gravity="center"
-                            android:text="5"
+                            android:text="X"
                             android:textSize="24sp"
                             android:textStyle="bold" />
                     </LinearLayout>
